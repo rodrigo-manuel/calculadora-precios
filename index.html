@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Precios</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1e1e2f">
+</head>
+<body>
+
+  <main class="contenedor">
+    <h1>Calculadora de Precios</h1>
+
+    <div class="campo">
+      <label for="cantidad">Cantidad de productos</label>
+      <input type="number" id="cantidad" min="1" value="1">
+    </div>
+
+    <div class="campo">
+      <label for="costo">Costo por unidad ($)</label>
+      <input type="text" inputmode="numeric" id="costo" value="0">
+    </div>
+
+    <div class="campo">
+      <label for="porcentaje">Porcentaje de ganancia (%)</label>
+      <input type="number" id="porcentaje" min="0" value="0">
+    </div>
+
+    <div class="campo">
+      <label for="flete">Flete/envío total ($) — opcional</label>
+      <input type="text" inputmode="numeric" id="flete" value="0" placeholder="Déjalo en 0 si no aplica">
+    </div>
+
+    <button id="btnCalcular">Calcular</button>
+
+    <section id="resultados" class="resultados oculto">
+      <h2>Resultados</h2>
+      <p>Flete por unidad: <span id="rFletePorUnidad">$0</span></p>
+      <p>Costo real por unidad: <span id="rCostoReal">$0</span></p>
+      <p><strong>Precio de venta por unidad: <span id="rPrecioVenta">$0</span></strong></p>
+      <p>Ganancia por unidad: <span id="rGananciaUnidad">$0</span></p>
+      <hr>
+      <p>Ganancia total del lote: <span id="rGananciaTotal">$0</span></p>
+      <p><strong>Venta total del lote: <span id="rVentaTotal">$0</span></strong></p>
+    </section>
+
+    <footer class="firma">
+      <p>Creado por <strong>Rodrigo Alfaro</strong></p>
+      <p>Ingeniero de Software · UCC 2027</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

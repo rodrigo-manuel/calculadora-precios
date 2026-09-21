@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #1e1e2f;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 420px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 24px;
+}
+
+.campo {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: #cfcfcf;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #2a2a3d;
+  color: #fff;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 8px;
+  background: #4f7cff;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:active {
+  background: #3a63d6;
+}
+
+.resultados {
+  margin-top: 24px;
+  padding: 16px;
+  background: #2a2a3d;
+  border-radius: 8px;
+}
+
+.resultados p {
+  margin: 8px 0;
+}
+
+.oculto {
+  display: none;
+}
+
+.firma {
+  margin-top: 32px;
+  text-align: center;
+  color: #8a8aa3;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.firma strong {
+  color: #4f7cff;
+}
